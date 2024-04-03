@@ -15,12 +15,15 @@ Navbar customization
 /* Home section customization */
 
 #home {
-    background-image: url('brackground.png'); 
-    background-size: cover;
-    background-position: center;
+    background-image: url('pexels-bich-tran-945453.jpg'); 
+    background-position: right;
+    padding-left: 50%;
     padding: 100px 0; /* Adjust top and bottom padding */
     text-align: center;
-    
+}
+#home h1 , #home p{
+    color: black;
+    font-weight: 500;
 }
 
 .profile-pic {
@@ -238,15 +241,26 @@ footer i {
 
 
 @media (max-width: 768px){
+    #home{
+        height: 450px;
+        padding: 5% 0 0 0;
+    }
     .about {
         height: 600px;
+    }
+    .lead{
+        margin-bottom: 0px;
     }
     .about .blogs{
         padding-top: 50px;
         display: block;
     }
     .about .blogItem{
-        width: 90%;
+        width: 80%;
+    }
+    .about .blogItem h3{
+        font-size: 18px;
+        color: white;
     }
 
     .about-box p{
@@ -266,6 +280,19 @@ footer i {
     }
     .card{
         margin-bottom: 50px;
+    }
+    .named{
+        padding-top: 20px;
+        font-size: 25px;
+    }
+    .named::after{
+        content: '';
+        left: 60%;
+        width: 30px;
+        height: 2px;
+        background-color: red;
+        transform:translateX(-50%);
+        bottom: 150;
     }
 
     footer i,footer h2 {
