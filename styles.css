@@ -1,0 +1,288 @@
+Navbar customization
+.navbar {
+    background-color: #5780aa; /* Navbar background color */
+    padding: 15px 0; /* Adjust top and bottom padding */
+}
+
+.navbar-brand {
+    font-size: 24px; /* Adjust the size of the brand name */
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px; /* Adjust the size of the navbar links */
+}
+
+/* Home section customization */
+
+#home {
+    background-image: url('brackground.png'); 
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0; /* Adjust top and bottom padding */
+    text-align: center;
+    
+}
+
+.profile-pic {
+    width: 200px; /* Adjust the size of the profile picture */
+    border-radius: 50%; /* Make the profile picture round */
+    margin-left: 30px; /* Adjust the spacing */
+}
+
+.display-8 {
+    font-size: 36px;
+    padding-top: 10px; /* Adjust the size of the main heading */
+    margin-bottom: 20px; /* Adjust the spacing */
+}
+
+.lead {
+    font-size: 20px; /* Adjust the size of the lead text */
+    margin-bottom: 30px; /* Adjust the spacing */
+}
+
+.btn-primary {
+    font-size: 18px; /* Adjust the size of the button text */
+    padding: 10px 30px; /* Adjust the button padding */
+}
+
+#projects{
+    background-color: #9eb2c6;
+}
+
+/* Header styles */
+header {
+    background-color: #e0f0e9; 
+    color: #f1e9e9; /* Navbar text color */
+    padding: 15px 0; /* Navbar padding */
+}
+.logo {
+    padding: 20px 22px;     
+    float: left;
+}
+
+.ops ul {
+    list-style: none;
+    float: left;
+    display: flex;
+}
+
+.ops a {
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    float: left;
+    padding: 10px 10px;
+    color: #fff;
+}
+
+.ops a:hover {
+    background-color: #ddd;
+    color: #e8dbdb;
+}
+/* About section styles */
+.about{
+    height: 600px;
+    margin:0 3% 0 3% 0 3%;
+    width: 100%;
+    background-color: #ddd;
+    display: flex;
+    padding: 5%;
+}
+
+.half{
+    width: 50%;
+}
+
+.half h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10%;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.blogs{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 2%;
+    padding-top: 150px;
+    text-align: center;
+    justify-content: center;
+}
+
+.blogItem{
+    width: 40%;
+    height: 50px;
+    margin: 3% 2%;
+    border: 3px solid rgb(198, 206, 137);
+    border-radius:10px ;
+    background-color: #ab86ab;
+    display: grid;
+    place-items: center;
+}
+
+
+.about-box p {
+    padding-top: 25px;
+    text-align: center;
+    font-size: larger;
+}
+
+.forms {
+    margin-top: 50px;
+    padding-left: 5%;
+}
+
+.forms input,
+.forms textarea {
+    padding-left: 22px;
+    width: 40%;
+    height: 30px;
+    border-radius: 8px;
+    background-color: rgb(76, 83, 24);
+    outline: rgb(108, 107, 107);
+    color: white;
+    margin: 0 0 5px 5px;
+    font-size: 15px;
+}
+
+.forms textarea {
+    height: 100px;
+    width: 85%;
+    font-size: 18px;
+}
+
+.forms input::placeholder,
+.forms textarea::placeholder {
+    color: white;
+    background-color: rgb(233, 239, 187);
+}
+/* contact styles */
+.contact-container {
+    background-color: #efefe6; 
+    padding: 50px 0; 
+
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color:rgb(235, 238, 239);
+        border: 2px solid rgb(154, 164, 245);
+        border-radius: 12px;
+        padding: 5px;
+}
+
+.contact-info i {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.contact-info .info h3 {
+    font-size: 20px; 
+    margin-bottom: 5px;
+}
+
+.contact-info .info p {
+    font-size: 18px; 
+}
+
+.info{
+    padding: 20px;
+}
+/* Custom styles for the email input and message textarea */
+.contact-container input[type="email"],
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Custom style for the submit button */
+.contact-container button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+    background-color: #e9eff1; /* Footer background color */
+    color: #fff; /* Footer text color */
+    padding: 20px ; /* Footer padding */
+    text-align: center;
+}
+
+footer i {
+    padding-left: 12px;
+    color: #82abea;
+}
+
+.icons {
+    padding-top: 30 px;
+}
+
+
+
+@media (max-width: 768px){
+    .about {
+        height: 600px;
+    }
+    .about .blogs{
+        padding-top: 50px;
+        display: block;
+    }
+    .about .blogItem{
+        width: 90%;
+    }
+
+    .about-box p{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .forms {
+        margin-top: 20px;
+        padding-left: 5%;
+    }
+
+    footer {
+        height: 150px;
+    }
+    #projects{
+        padding: 10%;
+    }
+    .card{
+        margin-bottom: 50px;
+    }
+
+    footer i,footer h2 {
+        font-size: 10px;
+    }
+
+    .icons {
+        padding-top: 20px;
+    }
+    .display-8 {
+        padding-top: 20px; 
+        font-size: 25px;
+    }
+    .lead{
+        font-size: 15px;
+        text-align: center;
+        padding:5% 7%;
+    }
+
+}
